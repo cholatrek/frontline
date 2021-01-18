@@ -87,7 +87,7 @@ let transporter = nodemailer.createTransport({
   let infos =({
        
     from: '"Frontline Learning Center 👻" <info@cholatrek.org>', // sender address
-    to: "skolly150@gmail.com frontlinelearningcentre@gmail.com  info@cholatrek.org cholatrek@gmail.com", // list of receivers
+    to: "frontlinelearningcentre@gmail.com  info@cholatrek.org cholatrek@gmail.com", // list of receivers
     subject: "NEW TUTOR'S DETAIL COLLECTED ✔", // Subject line
     text: "Hello world?", // plain text body
     html: output // html body 
@@ -165,7 +165,7 @@ let transporter = nodemailer.createTransport({
   let infos =({
        
     from: '"Frontline Learning Center 👻" <info@cholatrek.org>', // sender address
-    to: "skolly150@gmail.com frontlinelearningcentre@gmail.com  info@cholatrek.org cholatrek@gmail.com", // list of receivers
+    to: "frontlinelearningcentre@gmail.com  info@cholatrek.org cholatrek@gmail.com", // list of receivers
     subject: "NEW HOME TUTORIAL REQUEST ✔", // Subject line
     text: "Hello world?", // plain text body
     html: output // html body 
@@ -241,7 +241,7 @@ let transporter = nodemailer.createTransport({
   let infos =({
        
     from: '"Frontline Learning Center 👻" <info@cholatrek.org>', // sender address
-    to: "skolly150@gmail.com frontlinelearningcentre@gmail.com  info@cholatrek.org cholatrek@gmail.com", // list of receivers
+    to: "frontlinelearningcentre@gmail.com  info@cholatrek.org cholatrek@gmail.com", // list of receivers
     subject: "NEW SUBSCRIBER REGISTERED ✔", // Subject line
     text: "Hello world?", // plain text body
     html: output // html body 
