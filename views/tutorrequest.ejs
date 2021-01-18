@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Course Details - MaxCoach</title>
+    <meta name="robots" content="noindex, follow" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/images/favicon.png">
+
+    <!-- CSS
+	============================================ -->
+
+  
+
+    <!-- Use the minified version files listed below for better performance and remove the files listed above -->
+    <link rel="stylesheet" href="/assets/css/vendor/vendor.min.css">
+    <link rel="stylesheet" href="/assets/css/plugins/plugins.min.css">
+    <link rel="stylesheet" href="/assets/css/style.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"   >
+
+</head>
+
+<body>
+
+    <div id="page">
+        <!-- Header Section Start -->
+        <%- include('./partials/adminheader') %>
+        <!-- Header Section End -->
+
+     
+
+       <div class="">
+           <div class="shadow">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Phone</th>
+                    <th scope="col">Preference</th>
+                    <th scope="col">Message</th>
+                    
+
+                  </tr>
+                </thead>
+                <tbody>
+                    <% for(var i=0; i < tutorRequest.length; i++){ %>
+                        <tr>
+                                <th scope="row"><%= i+1 %></th>
+                                <td><%= tutorRequest[i].name %></td>
+                                <td><a href="mailto:<%= tutorRequest[i].email %>"><%= tutorRequest[i].email %></a></td>
+                                <td><%= tutorRequest[i].phone %></td>
+                                <td><%= tutorRequest[i].prefer %></td>
+                                <td><%= tutorRequest[i].message %></td>
+                             
+                              </tr>
+                    <% } %>
+                  
+                  
+                  
+                </tbody>
+              </table>
+           </div>
+       </div>
+
+    
+
+      
+
+
+        <!-- Scroll Top Start -->
+        <a href="#" class="scroll-top" id="scroll-top">
+            <i class="arrow-top fal fa-long-arrow-up"></i>
+            <i class="arrow-bottom fal fa-long-arrow-up"></i>
+        </a>
+        <!-- Scroll Top End -->
+    </div>
+
+   
+
+    <!-- JS
+============================================ -->
+
+    <!-- Vendors JS -->
+    <!-- <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+<script src="assets/js/vendor/jquery-3.4.1.min.js"></script>
+<script src="assets/js/vendor/jquery-migrate-3.1.0.min.js"></script>
+<script src="assets/js/vendor/bootstrap.bundle.min.js"></script> -->
+
+    <!-- Plugins JS -->
+    <!-- <script src="assets/js/plugins/parallax.min.js"></script>
+<script src="assets/js/plugins/jquery.ajaxchimp.min.js"></script> -->
+
+    <!-- Use the minified version files listed below for better performance and remove the files listed above -->
+    <script src="/assets/js/vendor/vendor.min.js"></script>
+    <script src="/assets/js/plugins/plugins.min.js"></script>
+
+    <!-- Main Activation JS -->
+    <script src="/assets/js/main.js"></script>
+
+
+
+
+
+</body>
+
+</html>

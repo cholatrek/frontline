@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Become a Teacher - MaxCoach</title>
+    <meta name="robots" content="noindex, follow" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
+
+    <!-- CSS
+	============================================ -->
+
+    <!-- Vendor CSS (Bootstrap & Icon Font) -->
+    <!-- <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/font-awesome-pro.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/font-gilroy.css"> -->
+
+    <!-- Plugins CSS (All Plugins Files) -->
+    <!-- <link rel="stylesheet" href="assets/css/plugins/select2.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/perfect-scrollbar.css">
+    <link rel="stylesheet" href="assets/css/plugins/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/nice-select.css">
+    <link rel="stylesheet" href="assets/css/plugins/ion.rangeSlider.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/photoswipe.css">
+    <link rel="stylesheet" href="assets/css/plugins/photoswipe-default-skin.css">
+    <link rel="stylesheet" href="assets/css/plugins/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/plugins/slick.css"> -->
+
+    <!-- Main Style CSS -->
+    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+
+    <!-- Use the minified version files listed below for better performance and remove the files listed above -->
+    <link rel="stylesheet" href="assets/css/vendor/vendor.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/plugins.min.css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+
+</head>
+
+<body>
+
+    <div id="page">
+        <!-- Header Section Start -->
+       <%- include('./partials/navbar') %>
+        <!-- Header Section End -->
+
+
+          <!-- Become An Instructor Section Start -->
+          <div class="become-an-instructor-section section section-padding jarallax" data-bg-image="./assets/images/bg/become-a-teache-bg.jpg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 offset-xl-6">
+                        <!-- Instructor Register From Start -->
+                        <div class="instructor-register-from">
+                            <h4 class="title">Register to become an Intructor</h4>
+                            <form action="/becomeatutor" method="POST" enctype="multipart/form-data" class="become-teacher-form">
+                                <div class="learn-press-message success">
+                                   <% if(message.length > 0 ) { %>
+                                    
+                                    <p style="background-color: green;color:white;padding-left:20px;"  ><%= message %></p>
+                                    <% }else{ %>
+                                        <i class="fa"></i>Please <a href="login-register.html">login</a> to send your request!
+                                        
+                                    <%}%>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 col-12 mb-15">
+                                        <input type="text" placeholder="Your Name *" required name="name">
+                                    </div>
+                                    <div class="col-md-6 col-12 mb-15">
+                                        <input type="email" placeholder="Email *" required name="email">
+                                    </div>
+                                    <div class="col-md-6 col-12 mb-15">
+                                        <input type="text" placeholder="Age *" required name="age">
+                                    </div>
+                                    <div class="col-md-6 col-12 mb-15 form-group">
+                                       <select class="form-control" name="gender" required style="color:#B1B1B1;background-color: whitesmoke;border:none;height:56px">
+                                           <option value="">Gender</option>
+                                           <option style="color:" value="male" >Male</option>
+                                           <option  value="female">Female</option>
+                                       </select>
+                                    </div>
+                                    <div class="col-md-12 col-12 mb-15">
+                                        <input type="text" placeholder="Your phone number" required name="phone">
+                                    </div>
+                                    <div class="col-md-6 col-12 mb-15">
+                                        <input type="text" placeholder="Years of teaching experience" required name="years">
+                                    </div>
+                                    <div class="col-md-6 col-12 mb-15 form-group">
+                                        <select class="form-control" required name="teaching" style="color:#B1B1B1;background-color: whitesmoke;border:none;height:56px">
+                                            <option value="" style="color:whitesmoke">Currently a teacher?</option>
+                                            <option style="" value="yes" >Yes</option>
+                                            <option  value="no">No</option>
+                                        </select>
+                                     </div>
+                                     <div class="col-md-12 col-12 mb-15">
+                                        <input type="text" required placeholder="What is your location?" name="location">
+                                    </div>
+
+                                    <div class="col-md-12 col-12 mb-15">
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" accept="application/pdf,application/vnd.ms-excel" name="cvFile" id="validatedCustomFile" required>
+                                            <label class="custom-file-label" for="validatedCustomFile" style="color:grey"> Upload your CV</label>
+                                           
+                                          </div>
+                                    </div>
+                                        
+                                    </div>
+                                   
+                                    <div class="col-12 text-center">
+                                        <button type="submit" class="btn btn-primary btn-hover-secondary">Submit Application</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- Instructor Register From End -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Become An Instructor Section End -->
+
+             
+
+         <!-- CTA Section Start -->
+         <div class="cta-section section section-padding" data-bg-color="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="cta-content text-center">
+                            <span class="sub-title" style="color:red" >EXPOSED!</span></span>
+                            <h2 class="title">TEACHERS WATCH THIS  BEFORE NEXT INTERVIEW!!! </h2>
+
+                            <a href="https://youtu.be/pY4dQs-8glo" style="color:red;" > Check Out Now! </a>
+                            <!-- <a href="https://youtu.be/pY4dQs-8glo" target="_blank" class="btn btn-primary btn-hover-secondary btn-width-300" style="background-color: #DC4637;border:none;padding-top:15px;font-weight:bold"> Check Out Now</a> -->
+
+                            <!-- Animation Shape Start -->
+                            <div class="shape shape-1 scene">
+                                <span data-depth="4">shape 1</span>
+                            </div>
+                            <div class="shape shape-2 scene">
+                                <span data-depth="4"><img src="assets/images/shape-animation/cta-shape-01.png" alt=""></span>
+                            </div>
+                            <div class="shape shape-3 scene">
+                                <span data-depth="4"><img src="assets/images/shape-animation/nwesletter-shape-2.png" alt=""></span>
+                            </div>
+                            <!-- Animation Shape End -->
+                        </div>
+                    </div>
+                </div>
+
+             
+            </div>
+        </div>
+        <!-- CTA Section End -->
+
+
+
+
+       
+
+        <!-- CTA Section Start -->
+        <div class="cta-section section" data-bg-color="" style="padding-top: 6%;margin-bottom:5%" >
+            <div class="container animation-shape">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="cta-content-area">
+                            <!-- Section Title Start -->
+                            <div class="section-title text-center mb-0" data-aos="fade-up">
+                                <span class="sub-title secondary-color max-mb-30">New horizon is calling</span>
+                                <h2 class="title heading-color max-mb-30">Take your interest and register an online class <br> today to enjoy life fully</h2>
+                                <a href="/courses" class="btn btn-primary btn-hover-secondary"> Get started for free</a>
+                            </div>
+                            <!-- Section Title End -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Animation Shape Start -->
+                <div class="shape shape-1 scene">
+                    <span data-depth="4">shape 1</span>
+                </div>
+                <div class="shape shape-2 scene">
+                    <span data-depth="4"></span>
+                </div>
+                <div class="shape shape-3 scene">
+                    <span data-depth="4"></span>
+                </div>
+                <div class="shape shape-4 scene">
+                    <span data-depth="4"></span>
+                </div>
+                <div class="shape shape-5 scene">
+                    <span data-depth="4"></span>
+                </div>
+                <div class="shape shape-6 scene">
+                    <span data-depth="4"></span>
+                </div>
+                <!-- Animation Shape End --><br><br>
+            </div>
+        </div>
+        <!-- CTA Section End -->
+
+
+        
+
+     
+
+      
+
+      
+       <%- include('./partials/footer') %>
+
+        <!-- Scroll Top Start -->
+        <a href="#" class="scroll-top" id="scroll-top">
+            <i class="arrow-top fal fa-long-arrow-up"></i>
+            <i class="arrow-bottom fal fa-long-arrow-up"></i>
+        </a>
+        <!-- Scroll Top End -->
+    </div>
+<%- include('./partials/mobileMenu') %>
+
+    <!-- JS
+============================================ -->
+
+    <!-- Vendors JS -->
+    <!-- <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+<script src="assets/js/vendor/jquery-3.4.1.min.js"></script>
+<script src="assets/js/vendor/jquery-migrate-3.1.0.min.js"></script>
+<script src="assets/js/vendor/bootstrap.bundle.min.js"></script> -->
+
+    <!-- Plugins JS -->
+    <!-- <script src="assets/js/plugins/parallax.min.js"></script>
+<script src="assets/js/plugins/jquery.ajaxchimp.min.js"></script> -->
+
+    <!-- Use the minified version files listed below for better performance and remove the files listed above -->
+    <script src="assets/js/vendor/vendor.min.js"></script>
+    <script src="assets/js/plugins/plugins.min.js"></script>
+
+    <!-- Main Activation JS -->
+    <script src="assets/js/main.js"></script>
+
+
+
+
+
+</body>
+
+</html>

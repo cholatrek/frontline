@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Course Details Free - MaxCoach</title>
+    <meta name="robots" content="noindex, follow" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
+
+    <!-- CSS
+	============================================ -->
+
+   
+    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+
+    <!-- Use the minified version files listed below for better performance and remove the files listed above -->
+    <link rel="stylesheet" href="/assets/css/vendor/vendor.min.css">
+    <link rel="stylesheet" href="/assets/css/plugins/plugins.min.css">
+    <link rel="stylesheet" href="/assets/css/style.min.css">
+    
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"  rel="stylesheet" >
+
+<style>
+        *{
+            font-family: "Gilroy";
+        }
+        h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Gilroy";
+  font-weight: 700;
+  line-height: 1.3;
+  margin-top: 0;
+  color: #333333; }
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  line-height: inherit;
+  margin: 0; }
+
+p:last-child {
+  margin-bottom: 0; }
+
+a,
+button {
+  line-height: inherit;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit; }
+
+a,
+button,
+img,
+input {
+  -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1); }
+
+*:focus {
+  outline: none !important; }
+
+a:focus {
+  text-decoration: none;
+  color: inherit;
+  outline: none; }
+
+a:hover {
+  text-decoration: none;
+  color: #DC4637; }
+
+button,
+input[type="submit"] {
+  cursor: pointer; }
+
+img {
+  max-width: 100%; }
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  opacity: 1; }
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  opacity: 1; }
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  opacity: 1; }
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  opacity: 1; }
+
+ul:last-child {
+  margin-bottom: 0; }
+
+hr {
+  border-top-width: 2px; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Common Classes */
+.playfair-font {
+  font-family: "Playfair Display", serif; }
+
+.margin-15 {
+  margin: 15px; }
+
+.section-border-bottom {
+  border-bottom: 1px solid #e7e7e7; }
+
+.jarallax {
+  position: relative;
+  z-index: 0; }
+
+.jarallax > .jarallax-img {
+  position: absolute;
+  -o-object-fit: cover;
+  object-fit: cover;
+  font-family: 'object-fit: cover;';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; }
+
+.max-width-100 {
+  max-width: 100%; }
+
+.fix {
+  overflow: hidden; }
+
+.section,
+.main-wrapper {
+  float: left;
+  width: 100%; }
+    </style>
+</head>
+
+<body>
+
+    <div id="page">
+        <!-- Header Section Start -->
+        <%- include('./partials/navbar') %>
+        <!-- Header Section End -->
+        <br><br><br><br><br>
+
+        <!-- Page Title Section Start -->
+        <div class="page-title-section section" >
+            <div class="page-title">
+                <div class="container">
+                    <!-- <h1 class="title" ><%= course.title %></h1> -->
+                </div>
+            </div>
+            <div class="page-breadcrumb" >
+                <div class="container" >
+                    <ul class="breadcrumb" style="background-color:white">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="current"><%= course.title %></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Page Title Section End -->
+    
+
+        <!-- Course Details Section Start -->
+        <div class="section">
+            <div class="container">
+                <div class="row max-mb-n50">
+
+                    <div class="col-lg-8 col-12 order-lg-1 max-mb-50">
+                        <!-- Course Details Wrapper Start -->
+                        <div class="course-details-wrapper">
+                           
+                            <div class="tab-content">
+                                <div id="overview" class="tab-pane fade show active">
+                                    <div class="course-overview">
+                                        <h3 class="title">Course Description</h3>
+
+                                        <div class="overview-course-video">
+                                            <!-- <iframe title="Drive Digital Transformation With Platform Strategies | Info-Tech Analyst Perspective" src="<%- course.introductoryVideo %>"></iframe> -->
+                                            <%- course.introductoryVideo %>
+                                        </div>
+
+                                        <p style="color:#231d1d;line-height:27px"><%= course.description %></p>
+                                      
+                                    </div>
+                                </div>
+
+                                <!-- <div id="instructor" class="tab-pane fade">
+                                    <div class="course-instructor">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="profile-image">
+                                                    <img src="assets/images/profile/instructor.jpeg" alt="profile">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="profile-info">
+                                                    <h5><a href="profile.html">Maggie Strickland</a></h5>
+                                                    <div class="author-career">/Advanced Educator</div>
+                                                    <p class="author-bio">Maggie is a brilliant educator, whose life was spent for computer science and love of nature. Being a female, she encountered a lot of obstacles and was forbidden to work in this field by her family. With a true spirit and talented gift, she was able to succeed and set an example for others.</p>
+
+
+                                                    <ul class="author-social-networks">
+                                                        <li class="item">
+                                                            <a href="JavaScript:Void(0);" target="_blank" class="social-link"> <i class="fab fa-twitter social-link-icon"></i> </a>
+                                                        </li>
+                                                        <li class="item">
+                                                            <a href="JavaScript:Void(0);" target="_blank" class="social-link"> <i class="fab fa-facebook-f social-link-icon"></i> </a>
+                                                        </li>
+                                                        <li class="item">
+                                                            <a href="JavaScript:Void(0);" target="_blank" class="social-link"> <i class="fab fa-instagram social-link-icon"></i> </a>
+                                                        </li>
+                                                        <li class="item">
+                                                            <a href="JavaScript:Void(0);" target="_blank" class="social-link"> <i class="fab fa-pinterest social-link-icon"></i> </a>
+                                                        </li>
+                                                        <li class="item">
+                                                            <a href="JavaScript:Void(0);" target="_blank" class="social-link"> <i class="fab fa-youtube social-link-icon"></i> </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+
+                            </div>
+                        </div>
+                        <!-- Course Details Wrapper End -->
+                    </div>
+
+                    <div class="col-lg-4 col-12 order-lg-2 max-mb-50" id="sticky-sidebar">
+                        <div class="sidebar-widget-wrapper pr-0">
+                            <div class="sidebar-widget">
+                                <div class="sidebar-widget-content">
+                                    <div class="sidebar-entry-course-info">
+                                        <div class="course-price">
+                                            <span class="meta-label">
+                                                <i class="meta-icon far fa-money-bill-wave"></i>
+                                                Price	
+                                            </span>
+                                            <span class="meta-value">
+                                                <span class="price"><strike>N</strike><%= course.price %></span>
+                                            </span>
+                                        </div>
+                                        <div class="course-meta">
+                                            <div class="course-instructor">
+                                                <span class="meta-label">
+                                                    <i class="far fa-chalkboard-teacher"></i>
+                                                    Instructor				
+                                                </span>
+                                                <span class="meta-value"><%= course.instructor %></span>
+                                            </div>
+                                         
+                                            <div class="course-lectures">
+                                                <span class="meta-label">
+                                                    <i class="far fa-file-alt"></i>
+                                                    Lectures				
+                                                </span>
+                                                <span class="meta-value"><%= course.lectureNo %></span>
+                                            </div>
+
+                                            <div class="course-students">
+                                                <span class="meta-label">
+                                                    <i class="far fa-user-alt"></i>
+                                                    Enrolled	
+                                                </span>
+                                                <span class="meta-value"><%= course.enrolled %></span>
+                                            </div>
+                                            <div class="course-language">
+                                                <span class="meta-label">
+                                                    <i class="far fa-language"></i>
+                                                    Language				
+                                                </span>
+                                                <span class="meta-value"><%= course.language %></span>
+                                            </div>
+                                           
+                                        </div>
+                                        <div class="lp-course-buttons">
+                                            <button class="btn btn-primary btn-hover-secondary btn-width-100" style="background-color: #dc4637;border:none" data-toggle="modal" data-target="#exampleModalCenter">Enroll</button>
+                                        </div>
+                                     
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    
+                    <div class="modal-body">
+                            <div class="" style="padding:30px">
+                                   <div class="text-center">
+                                        <h4 style="color:#DC4637">Please supply your email address</h4>
+                                    <p>This is the email address that will give you access to the course. Do ensure to double check!</p><br>
+                                   </div>
+                                    <form action="/initialize-transaction/<%= course._id %>" method="POST" >
+                                        <input type="email" name="email" required placeholder="Enter your Email address"  > <br><br>
+                                        <center><button type="submit" class="btn btn-primary btn-hover-secondary" style="background-color: #dc4637;border:none;font-weight:500" >Purchase Course Now</button></center>
+                                    </form>
+                            </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+
+
+        <!-- Course Details Section End -->
+
+        <!-- Related Courses Section Start -->
+        <div class="related-courses-section section section-padding">
+            <div class="container">
+
+                <!-- Section Title Start -->
+                <div class="section-title text-center mb-35" data-aos="fade-up">
+                    <h3 class="title">Related Courses​</h3>
+                </div>
+                <!-- Section Title End -->
+
+                <!-- Courses Wrapper Start -->
+                <div class="courses-slider swiper-container" data-aos="fade-up">
+
+                    <div class="swiper-wrapper">
+
+                       
+
+
+                      
+                        <% for(var i = 0; i < related.length; i++) { %>
+                        <!-- Course Start -->
+                        <div class="swiper-slide mb-30">
+                            <div class="course box-shadow">
+                                <div class="thumbnail">
+                                    <a href="/coursedetails/<%= related[i]._id %>" class="image"><img src="<%= related[i].courseImage.slice(8) %>" alt="Course Image"></a>
+                                </div>
+                                <div class="info">
+                                    <span class="price"><%= related[i].price %><span>.00</span></span>
+                                    <h3 class="title"><a href="/coursedetails/<%= related[i]._id %>"><%= related.title %></a></h3>
+                                    <ul class="meta">
+                                        <li><i class="far fa-file-alt"></i><%= related[i].lectureNo %></li>
+                                        <li><i class="far fa-user-alt"></i><%= related[i].enrolled %></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Course End -->
+                        <% } %>
+                    </div>
+                    <div class="swiper-pagination"></div>
+
+                </div>
+                <!-- Courses Wrapper End -->
+            </div>
+        </div>
+        <!-- Related Courses Section End -->
+
+       <%- include('./partials/footer') %>
+
+        <!-- Scroll Top Start -->
+        <a href="#" class="scroll-top" id="scroll-top">
+            <i class="arrow-top fal fa-long-arrow-up"></i>
+            <i class="arrow-bottom fal fa-long-arrow-up"></i>
+        </a>
+        <!-- Scroll Top End -->
+    </div>
+
+   <%- include('./partials/mobileMenu') %>
+    <!-- JS
+============================================ -->
+
+    <!-- Vendors JS -->
+    <!-- <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+<script src="assets/js/vendor/jquery-3.4.1.min.js"></script>
+<script src="assets/js/vendor/jquery-migrate-3.1.0.min.js"></script>
+<script src="assets/js/vendor/bootstrap.bundle.min.js"></script> -->
+
+    <!-- Plugins JS -->
+    <!-- <script src="assets/js/plugins/parallax.min.js"></script>
+<script src="assets/js/plugins/jquery.ajaxchimp.min.js"></script> -->
+
+    <!-- Use the minified version files listed below for better performance and remove the files listed above -->
+    <script src="/assets/js/vendor/vendor.min.js"></script>
+    <script src="/assets/js/plugins/plugins.min.js"></script>
+
+    <!-- Main Activation JS -->
+    <script src="/assets/js/main.js"></script>
+
+
+
+
+
+</body>
+
+</html>

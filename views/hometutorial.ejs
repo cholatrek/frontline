@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Home 5 - MaxCoach</title>
+    <meta name="robots" content="noindex, follow" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
+
+    <!-- CSS
+	============================================ -->
+
+   
+
+    <!-- Use the minified version files listed below for better performance and remove the files listed above -->
+    <link rel="stylesheet" href="assets/css/vendor/vendor.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/plugins.min.css">
+    <link rel="stylesheet" href="assets/css/style.min.css"> 
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"   >
+
+
+    <style>
+        *{
+            font-family: "Gilroy";
+        }
+        h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Gilroy";
+  font-weight: 700;
+  line-height: 1.3;
+  margin-top: 0;
+  color: #333333; }
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  line-height: inherit;
+  margin: 0; }
+
+p:last-child {
+  margin-bottom: 0; }
+
+a,
+button {
+  line-height: inherit;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit; }
+
+a,
+button,
+img,
+input {
+  -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1); }
+
+*:focus {
+  outline: none !important; }
+
+a:focus {
+  text-decoration: none;
+  color: inherit;
+  outline: none; }
+
+a:hover {
+  text-decoration: none;
+  color: #DC4637; }
+
+button,
+input[type="submit"] {
+  cursor: pointer; }
+
+img {
+  max-width: 100%; }
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  opacity: 1; }
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  opacity: 1; }
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  opacity: 1; }
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  opacity: 1; }
+
+ul:last-child {
+  margin-bottom: 0; }
+
+hr {
+  border-top-width: 2px; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Common Classes */
+.playfair-font {
+  font-family: "Playfair Display", serif; }
+
+.margin-15 {
+  margin: 15px; }
+
+.section-border-bottom {
+  border-bottom: 1px solid #e7e7e7; }
+
+.jarallax {
+  position: relative;
+  z-index: 0; }
+
+.jarallax > .jarallax-img {
+  position: absolute;
+  -o-object-fit: cover;
+  object-fit: cover;
+  font-family: 'object-fit: cover;';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; }
+
+.max-width-100 {
+  max-width: 100%; }
+
+.fix {
+  overflow: hidden; }
+
+.section,
+.main-wrapper {
+  float: left;
+  width: 100%; }
+    </style>
+</head>
+
+<body>
+
+    <div id="page">
+        <!-- Header Section Start -->
+       <%- include('./partials/navbar') %>
+        <!-- Header Section End -->
+
+        <!-- Slider/Intro Section Start -->
+        <div class="intro5-section section" data-bg-color="">
+
+            <div class="container">
+                <div class="row row-cols-lg-2 row-cols-1 max-mb-n30">
+
+                    <!-- Intro One Content Start -->
+                    <div class="col align-self-center max-mb-30" data-aos="fade-up">
+                        <div class="intro5-content text-center text-md-left">
+                            <h2 class="title">Register your child for quality private tutoring at Frontline </h2>
+                            <div class="desc">
+                                <p>We only recommend tutors that understand British curriculum pedagogy, a system that helps deepen students' understanding of concepts. 
+                                </p>
+                            </div>
+                            <a data-toggle="modal" data-target="#exampleModalLong" class="btn btn-primary btn-hover-secondary" style="color:white;background-color: #DC4637;border:none;padding-top:15px;font-weight:bold"><i class="fa fa-book" style="margin-right:10px"></i>  Enrol your child now! </a>
+                        </div>
+                    </div>
+                    <!-- Intro One Content End -->
+
+
+
+                    <!-- Intro One Course Start -->
+                    <div class="col max-mb-30" data-aos="fade-up">
+                        <!-- Intro Image Start -->
+                        <div class="intro5-image">
+                            <img src="assets/images/custom/hometutorial2.jpg" alt="hero">
+                        </div>
+                        <!-- Intro Image End -->
+                    </div>
+                    <!-- Intro One Course End -->
+
+                </div>
+            </div>
+
+            <!-- Section Bottom Shape Start -->
+            <div class="section-bottom-shape-three">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" version="1.1" preserveAspectRatio="none" width="100%" height="300px">
+                    <path class="elementor-shape-fill" d="M100,6.21724894e-15 L100,79.7754703 C99.7919362,79.7904198 99.6381974,79.8027262 99.5387835,79.8123897 C99.4256772,79.823384 99.3041657,79.8260447 99.1946857,79.8368479 C98.0926947,79.9455898 96.8446759,80.1450278 96.0566669,80.3249475 C95.1164427,80.5396213 93.6651585,81.0424133 91.7028144,81.8333235 C91.1881986,82.0648898 90.6629331,82.3321219 90.1270181,82.6350198 C89.591103,82.9379178 88.7808989,83.4254899 87.6964058,84.0977361 L84.5866785,86.505496 C83.9146556,87.0756533 83.3999022,87.5308769 83.0424183,87.8711667 C82.6706034,88.2250983 82.3219339,88.542792 81.9256169,88.9363773 C81.5083908,89.3507275 81.0415644,89.840935 80.5708891,90.2075771 C80.5694243,90.2087181 79.879045,90.9348069 79.6966916,91.0931301 C79.6786428,91.1088004 79.619181,91.1783162 79.6134287,91.1806951 C79.5856944,91.1921647 79.4872823,91.3143998 79.2325655,91.5654126 C78.9778486,91.8164253 78.4398261,92.3343122 78.4004716,92.3632772 C78.3852088,92.3745107 78.392749,92.3842318 78.3758447,92.404756 C78.3491619,92.4371525 78.297362,92.4837356 78.2713401,92.5087419 C78.1637093,92.6121724 78.057958,92.7052899 77.9412752,92.8201952 C77.9165042,92.8445888 77.8915476,92.8692319 77.8664085,92.8941052 C77.5163916,93.2404218 77.1310001,93.6313644 76.71875,94.0148783 C75.2657705,95.366577 73.5033569,96.917444 71.8705734,97.9003807 C70.9731573,98.4406259 70.1135532,98.9247458 69.344824,99.2158182 C67.7865314,99.8058517 66.6383515,99.8725302 66.5625,99.8951541 C65.9370497,100.081705 65.026153,100.01931 63.8298099,99.7079704 C64.7659815,99.9771782 64.7185432,99.9771782 63.6874951,99.7079704 C62.9475222,99.3188802 62.4074807,99.0301938 62.0673707,98.8419114 C61.8786639,98.7374448 61.673915,98.5226524 61.4899272,98.3670131 C61.1903999,98.1136365 60.6170457,97.6081983 60.0811799,96.985446 C59.3300042,96.1124731 58.6118857,95.0936327 58.4683822,94.958848 C56.7254333,92.8360206 54.6654939,87.8275853 54.21875,87.4847052 C54.1053147,87.3976425 52.2376405,83.2507606 50,77.6976587 C47.9421254,72.5906776 45.5976116,66.2821297 43.4375,61.1176887 C41.1008376,55.5311461 39.2000795,51.649717 38.6979167,50.8121989 C38.4600638,50.4155028 37.3864888,48.4156228 36.1120817,46.6631568 C35.2477791,45.4746348 34.1630442,44.3456814 33.4375,43.6987268 C32.7119558,43.0517722 31.709781,42.2398109 30.6626803,42.1439083 C30.2356184,42.1047942 29.5251709,42.1444477 29.1201362,42.1439083 C29.0325991,42.1437917 28.1329894,42.1824102 27.1396439,41.8896899 C25.9452799,41.5377333 24.5848063,40.8076085 23.9308866,40.295173 C22.8856727,39.476105 21.6969743,38.3949718 20.9413937,37.4307381 C20.5662547,36.9520047 19.4846561,35.6658156 18.5123771,34.1142672 C18.0017289,33.2993821 16.652903,31.0615524 15.5607311,29.0022448 C14.5429598,27.0832206 13.7630462,25.3063307 13.6950881,25.3220678 C13.5647384,25.3522529 12.1582089,21.8557564 9.63623595,17.1783979 C9.10017282,16.1841924 8.49929577,14.9056754 7.41107192,13.1440893 C7.07564424,12.6011084 6.59991624,11.9188319 6.14393284,11.2720612 C5.88126255,10.8994874 3.6065072,5.72114201 3.39886357,5.35133855 C2.3562704,3.49452944 1.22331587,-0.39125009 -7.81597009e-14,-6.30600005 L100,6.21724894e-15 Z" id="path-1"></path>
+                </svg>
+            </div>
+            <!-- Section Bottom Shape End -->
+
+        </div>
+        <!-- Slider/Intro Section End -->
+
+      
+
+        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                   
+                    <div class="modal-body">
+                       <!-- Instructor Register From Start -->
+                       <div class="instructor-register-from">
+                         
+                            <h5 class="title" style="color:#DC4637">Request a tutor</h5>
+                            <form action="/hometutorial" method="POST" class="become-teacher-form">
+                                <div class="learn-press-message success">
+                                    <i class="fa"></i>Kindly fill the form below!
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 col-12 mb-15">
+                                        <input type="text" placeholder="Your Name *" name="name" required>
+                                    </div>
+                                    <div class="col-md-6 col-12 mb-15">
+                                        <input type="email" placeholder="Email *" name="email" required>
+                                    </div>
+                                    <div class="col-md-12 col-12 mb-15">
+                                        <input type="text" placeholder="Your phone number" name="phone" required>
+                                    </div>
+                                    <div class="col-md-12 col-12 mb-15 ">
+
+                                            <div class="form-group">
+                                                   
+                                                <select class="form-control" name="prefer" required style="color:#B1B1B1;background-color: whitesmoke;border:none;height:56px">
+                                                    <option style="color:whitesmoke" value="">Which do you prefer?</option>
+                                                    <option style="color:" value="online" >Online Lesson</option>
+                                                    <option  value="home">Home</option>
+                                                </select>
+                                                  </div>
+                                    </div>
+                                    <div class="col-12 mb-15">
+                                            <textarea name="message" required placeholder="Your Message" style="max-height: 20px"></textarea>
+                                        </div>
+                                    
+                                    <div class="col-12 text-center">
+                                        <button type="submit"  class="btn btn-primary btn-hover-secondary" style="background-color: #DC4637;border:none;padding-top:10px;font-weight:bold">Submit Request</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- Instructor Register From End -->
+                    </div>
+                   
+                  </div>
+                </div>
+              </div>
+
+
+
+        <!-- Faq Section Start -->
+        <div class="faq-section section section-padding-bottom position-relative">
+            <div class="container">
+                <div class="row row-cols-lg-2 row-cols-1 align-items-center">
+                    <div class="col">
+                        <div class="faq-left-image">
+                            <img src="assets/images/about/about03/about-us-03-image-01.png" alt="about">
+
+                            <!-- Animation Shape Start -->
+                            <div class="shape shape-1 scene">
+                                <span data-depth="3">
+                                    <img src="assets/images/shape-animation/shape-2.svg" alt="" class="svgInject">
+                                </span>
+                            </div>
+                            <!-- Animation Shape End -->
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="faq-content-area" style="padding-top: 10%" >
+                            <!-- Section Title Start -->
+                            <div class="section-title text-left mb-50" data-aos="fade-up">
+                                <span class="sub-title">FRONTLINE <strong>Educators</strong></span>
+                                <h2 class="title fz-48">How are we  <span>different</span> from others</h2>
+                            </div>
+                            <!-- Section Title End -->
+
+                            <div class="mx-accordion max-mb-n30" id="accordionExample">
+                                <div class="card">
+                                    <div class="card-header" id="headingOne">
+                                        <h5 class="mb-0">
+                                            <a href="#" class="acc-btn border-0" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                We teach using the British Curriculum
+                                            </a>
+                                        </h5>
+                                    </div>
+
+                                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                        <div class="card-body">We only recommend tutors that understand British curriculum pedagogy, a system that helps deepen students' understanding of concepts. Our tutors also have a good work ethic and have signed the code of conduct
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card-header" id="headingTwo">
+                                        <h5 class="mb-0">
+                                            <a href="#" class="acc-btn border-0 collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                               We offer Online tutoring
+                                            </a>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                        <div class="card-body">To break the distance barrier and access to subject experts, we have an effective platform for one on one online learning that is very interactive. 
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card-header" id="headingThree">
+                                        <h5 class="mb-0">
+                                            <a href="#" class="acc-btn border-0 collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                on site training
+                                            </a>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                        <div class="card-body">It’s not just a normal thing to be able to build such a solid online educational system like Frontline where your progress is easily tracked and feedback is properly delivered. We promise to keep improving our system for better stability and flexibility.
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Faq Section End -->
+
+      
+
+      <!-- Download App Section Start -->
+      <div class="download-app-section section section-padding-top">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <div class="download-app-image mb-sm-50 mb-xs-50">
+                        <img src="assets/images/others/home-5-image-02.png" alt="">
+
+                        <!-- Animation Shape Start -->
+                        <div class="shape shape-1 scene">
+                            <span data-depth="3">
+                                <img src="assets/images/shape-animation/shape-2.svg" alt="" class="svgInject">
+                            </span>
+                        </div>
+                        <div class="shape shape-2 scene">
+                            <span data-depth="-3"><img src="assets/images/shape-animation/cta-shape-01.png" alt=""></span>
+                        </div>
+                        <div class="shape shape-3 scene">
+                            <span data-depth="4">shape 3</span>
+                        </div>
+                        <div class="shape shape-4 scene">
+                            <span data-depth="4"><img src="assets/images/shape-animation/shape-1.png" alt=""></span>
+                        </div>
+                        <!-- Animation Shape End -->
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="download-app-content">
+                        <!-- Section Title Start -->
+                        <div class="section-title text-left mb-30" data-aos="fade-up">
+                            <span class="sub-title">Why private tuition?
+                            </span>
+                            <h2 class="title fz-48">Home and online private    <span> tutoring of </span> students</h2>
+                        </div>
+                        <!-- Section Title End -->
+
+                        <p>Private tuition on a one-to-one basis is the most productive way to learn. Private tuition can be used to help your child catch up after temporarily falling behind, to learn a subject outside the school environment, to stretch your child further or give closer attention to the needs of your child than is possible in a classroom environment.
+ 
+                        </p>
+
+                        <a href="https://wa.me/message/767QZPXMRICSM1" class="btn btn-primary btn-hover-secondary mt-30" style="background-color: #DC4637;border:none;padding-top:15px;font-weight:bold" > Book a tutor Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Download App Section End -->
+
+        <!-- Register Section Start -->
+        <div class="register-section section section-padding">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-4 col-lg-5 order-2 order-lg-1">
+                        <div class="register-content">
+                            <!-- Section Title Start -->
+                            <div class="section-title text-left mb-30" data-aos="fade-up">
+                                <span class="sub-title">Why online tutoring?</span>
+                                <h2 class="title fz-48">Consider Online Private <span> Tutoring </span>now</h2>
+                            </div>
+                            <!-- Section Title End -->
+
+                            <ul class="maxcoach-list">
+                                <li class="item">
+                                    <div class="icon">
+                                        <i class="fas fa-check"></i>
+                                    </div>
+                                    <div class="text">No driving time </div>
+                                </li>
+                                <li class="item">
+                                    <div class="icon">
+                                        <i class="fas fa-check"></i>
+                                    </div>
+                                    <div class="text">Parents do not have to be home
+                                    </div>
+                                </li>
+                                <li class="item">
+                                    <div class="icon">
+                                        <i class="fas fa-check"></i>
+                                    </div>
+                                    <div class="text">Parents can be in the same room  </div>
+                                </li>
+                                <li class="item">
+                                    <div class="icon">
+                                        <i class="fas fa-check"></i>
+                                    </div>
+                                    <div class="text">Tutoring continues if you change home or travel
+                                    </div>
+                                </li>
+                                <li class="item">
+                                    <div class="icon">
+                                        <i class="fas fa-check"></i>
+                                    </div>
+                                    <div class="text">Students are comfortable with technology
+                                    </div>
+                                </li>
+                                <li class="item">
+                                    <div class="icon">
+                                        <i class="fas fa-check"></i>
+                                    </div>
+                                    <div class="text">The weather never affects tutoring
+                                    </div>
+                                </li>
+                                <li class="item">
+                                    <div class="icon">
+                                        <i class="fas fa-check"></i>
+                                    </div>
+                                    <div class="text">Lessons can be recorded
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <a data-toggle="modal" data-target="#exampleModalLong" class="btn btn-primary btn-hover-secondary" style="background-color: #DC4637;color:white;border:none;padding-top:15px;font-weight:bold">  Request a tutor now! </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-8 col-lg-7 order-1 order-lg-2">
+                        <div class="register-image mb-sm-50 mb-xs-50">
+                            <img src="assets/images/others/home-5-image-01.png" alt="">
+
+                            <!-- Animation Shape Start -->
+                            <div class="shape shape-1 scene">
+                                <span data-depth="3">
+                                    <img src="assets/images/shape-animation/shape-2.svg" alt="" class="svgInject">
+                                </span>
+                            </div>
+                            <div class="shape shape-2 scene">
+                                <span data-depth="-3"><img src="assets/images/shape-animation/shape-3.png" alt=""></span>
+                            </div>
+                            <!-- Animation Shape End -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Register Section End -->
+
+       
+
+         <!-- CTA Section Start -->
+         <div class="cta-section section section-padding" data-bg-color="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="cta-content text-center">
+                            <span class="sub-title" style="color:red" >REVEALED!</span></span>
+                            <h2 class="title">DO NOT HIRE A HOME TUTOR BEFORE WATCHING THIS </h2>
+                            <a href="https://youtu.be/1Lta30LAXyA" target="_blank" class="btn btn-primary btn-hover-secondary btn-width-300" style="background-color: #DC4637;border:none;padding-top:15px;font-weight:bold"> Check Out Now</a>
+
+                            <!-- Animation Shape Start -->
+                            <div class="shape shape-1 scene">
+                                <span data-depth="4">shape 1</span>
+                            </div>
+                            <div class="shape shape-2 scene">
+                                <span data-depth="4"><img src="assets/images/shape-animation/cta-shape-01.png" alt=""></span>
+                            </div>
+                            <div class="shape shape-3 scene">
+                                <span data-depth="4"><img src="assets/images/shape-animation/nwesletter-shape-2.png" alt=""></span>
+                            </div>
+                            <!-- Animation Shape End -->
+                        </div>
+                    </div>
+                </div>
+
+             
+            </div>
+        </div>
+        <!-- CTA Section End -->
+
+       
+
+        <!-- Testimonial Section Start -->
+        <div class="testimonial-section section section-padding-top" data-bg-color="#f8f8f8">
+            <div class="container">
+                <!-- Section Title Start -->
+                <div class="section-title text-center" data-aos="fade-up">
+                    <span class="sub-title">People are praising Frontline</span>
+                    <h2 class="title fz-48">What makes them <span>love us?</span></h2>
+                </div>
+                <!-- Section Title End -->
+                <!--Testimonial Slider Start -->
+                <div class="h5-testimonial-slider swiper-container" data-aos="fade-up">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <!-- Static Testimonial Start -->
+                            <div class="static-testimonial h5-testimonial mb-30">
+                                <div class="testimonial-image">
+                                    <img src="assets/images/testimonial/jeniffer.jpg" alt="">
+                                </div>
+                                <div class="testimonial-content">
+                                    <p>I am so glad I was part of your trainee. Every training section was out of this world.May God continue to bless Frontline learning center.<br><br>
+                                    </p>
+                                </div>
+                                <div class="author-info">
+                                    <div class="cite">
+                                        <h6 class="name">Jennifer Nnaeto</h6>
+                                        <span class="position">/ School owner, Crystal Hill Montessori International school Abidjan</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Static Testimonial End -->
+                        </div>
+
+                        <div class="swiper-slide">
+                            <!-- Static Testimonial Start -->
+                            <div class="static-testimonial h5-testimonial mb-30">
+                                <div class="testimonial-image">
+                                    <img src="assets/images/testimonial/anita.jpg" alt="">
+                                </div>
+                                <div class="testimonial-content">
+                                    <p>The training was enlightening. It has taught me as a teacher to be intentional at my approach to teaching. I've also learnt planning and orderliness.
+
+                                    </p>
+                                </div>
+                                <div class="author-info">
+                                    <div class="cite">
+                                        <h6 class="name">Edet Anita – Olubayo</h6>
+                                        <span class="position">/ Early Years Teacher, Pearls Garden School, Ejigbo Lagos</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Static Testimonial End -->
+                        </div>
+
+
+
+                        <div class="swiper-slide">
+                            <!-- Static Testimonial Start -->
+                            <div class="static-testimonial h5-testimonial mb-30">
+                                <div class="testimonial-image">
+                                    <img src="assets/images/testimonial/evi.jpg" alt="">
+                                </div>
+                                <div class="testimonial-content">
+                                    <p>The complete training package was mind blowing. I could feel figurative scales fall off my eyes.  I was wowed at the explanation of the core skills. It was a good lecture. I need to improve on my creativity in class and differentiate my learners so as to achieve maximum success.
+                                    </p>
+                                </div>
+                                <div class="author-info">
+                                    <div class="cite">
+                                        <h6 class="name">Evi Nwaloka</h6>
+                                        <span class="position">/ Mathematics teacher, Pearls Garden School, Ejigbo Lagos</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Static Testimonial End -->
+                        </div>
+
+                        <div class="swiper-slide">
+                            <!-- Static Testimonial Start -->
+                            <div class="static-testimonial h5-testimonial mb-30">
+                                <div class="testimonial-image">
+                                    <img src="assets/images/testimonial/toba.jpg" alt="">
+                                </div>
+                                <div class="testimonial-content">
+                                    <p>I learnt the British teachers' mindset in the classroom and was equipped to teach Nigerian Students Mathematics as a British Mathematics teacher would do. British Curriculum is what we really need if we want to give our children 21st century standard education. Thank you Frontline leaders.
+                                    </p>
+                                </div>
+                                <div class="author-info">
+                                    <div class="cite">
+                                        <h6 class="name">Oloruntuyi Oloruntoba Aaron </h6>
+                                        <span class="position">/ Mathematics teacher, Jacobs Model School, Sango Ota, Ogun State</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Static Testimonial End -->
+                        </div>
+
+
+                        <div class="swiper-slide">
+                            <!-- Static Testimonial Start -->
+                            <div class="static-testimonial h5-testimonial mb-30">
+                                <div class="testimonial-image">
+                                    <img src="assets/images/testimonial/clinton.jpg" alt="">
+                                </div>
+                                <div class="testimonial-content">
+                                    <p>The instructors were outstanding. Learned tons of info. I would certainly recommend the British curriculum Training to any teacher. Exactly  what I needed at the right time and at the right price. I relied on this training to develop skills and understanding in effective teaching and classroom management.  I was happy with the results and will recommend them to my colleagues at work.
+                                    </p>
+                                </div>
+                                <div class="author-info">
+                                    <div class="cite">
+                                        <h6 class="name">Clinton Akujor</h6>
+                                        <span class="position">/ Teacher of Science and Chemistry, Lagos.                                            </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Static Testimonial End -->
+                        </div>
+                       
+                    </div>
+                    <div class="swiper-pagination"></div><br><br>
+                </div>
+                <!--Testimonial Slider End -->
+            </div>
+        </div>
+        <!-- Testimonial Section End -->
+
+       
+
+      <%- include('./partials/footer') %>
+
+        <!-- Scroll Top Start -->
+        <a href="#" class="scroll-top" id="scroll-top">
+            <i class="arrow-top fal fa-long-arrow-up"></i>
+            <i class="arrow-bottom fal fa-long-arrow-up"></i>
+        </a>
+        <!-- Scroll Top End -->
+    </div>
+
+   <%- include('./partials/mobileMenu') %>
+
+    <!-- JS
+============================================ -->
+
+    <!-- Vendors JS -->
+    <!-- <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+<script src="assets/js/vendor/jquery-3.4.1.min.js"></script>
+<script src="assets/js/vendor/jquery-migrate-3.1.0.min.js"></script>
+<script src="assets/js/vendor/bootstrap.bundle.min.js"></script> -->
+
+    <!-- Plugins JS -->
+    <!-- <script src="assets/js/plugins/parallax.min.js"></script>
+<script src="assets/js/plugins/jquery.ajaxchimp.min.js"></script> -->
+
+    <!-- Use the minified version files listed below for better performance and remove the files listed above -->
+    <script src="assets/js/vendor/vendor.min.js"></script>
+    <script src="assets/js/plugins/plugins.min.js"></script>
+
+    <!-- Main Activation JS -->
+    <script src="assets/js/main.js"></script>
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Course Details - MaxCoach</title>
+    <meta name="robots" content="noindex, follow" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/images/favicon.png">
+
+    <!-- CSS
+	============================================ -->
+
+  
+
+    <!-- Use the minified version files listed below for better performance and remove the files listed above -->
+    <link rel="stylesheet" href="/assets/css/vendor/vendor.min.css">
+    <link rel="stylesheet" href="/assets/css/plugins/plugins.min.css">
+    <link rel="stylesheet" href="/assets/css/style.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"   >
+
+</head>
+
+<body>
+
+    <div id="page">
+        <!-- Header Section Start -->
+        <%- include('./partials/adminheader') %>
+        <!-- Header Section End -->
+
+     
+
+       <div class="">
+           <div class="row">
+               <div class="col-sm-"></div>
+               <div class="col-sm-12">
+                   <div class="shadow">
+                    <div class="instructor-register-from">
+                        <!-- <h6 class="float-right"><a href="/admin/courses" style="color:white;background-color: black;padding:10px 20px;border-radius: 5px">Post a new course</a></h6>
+                        <h4 class="title">Hello <span style="color:red" >Frontline </span> Learning Centre </h4> -->
+                        <div class="row">
+
+                        <% for(var i = 0; i < courses.length; i++){ %>
+                           
+                           <div class="col-sm-4">
+                            <div class="card">
+                                <div class="shadow">
+                                    <img class="card-img-top" src="<%= courses[i].courseImage.slice(8) %>" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="" style="font-weight:bold" ><%= courses[i].title %></p>
+                                 <button class="btn btn-success float-left "  style="padding:5px 50px"  data-toggle="modal" data-target="#exampleModalLong<%= i+1 %>">Edit</button>
+                                 <button class="btn btn-danger float-right" style="padding:5px 40px"  data-toggle="modal" data-target="#popup<%= i + courses.length %>" >Delete</button>
+                                <br><br>
+                                </div>
+                                </div>
+                              </div>
+                              
+                           </div>
+                    
+                           <div class="modal fade" id="exampleModalLong<%= i+1 %>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                  <div class="modal-content" style="padding:40px 20px;">
+                                    <h3 class="text-center">Edit Post</h3><br>
+                                        <form action="/courseEdit/<%= courses[i]._id %>" method="POST" class="become-teacher-form">
+                                                
+                                            <div class="row">
+                                                <div class="col-md-6 col-12 mb-15">
+                                                    <input type="text" placeholder="Course Title *" value="<%= courses[i].title %>" name="title">
+                                                </div>
+                                                <div class="col-md-6 col-12 mb-15">
+                                                    <input type="text" placeholder="Name of instructor" value="<%= courses[i].instructor %>" name="instructor">
+                                                </div>
+                                                
+                                                <div class="col-md-6 col-12 mb-15">
+                                                    <input type="text" placeholder="Price" name="price" value="<%= courses[i].price %>" >
+                                                </div>
+                                                <div class="col-md-6 col-12 mb-15">
+                                                    <input type="text" placeholder="introductory Video Link" value="<%= courses[i].introductoryVideo %>" name="introductoryVideo">
+                                                </div>
+                                                  
+                                                <div class="col-md-12 col-12 mb-15">
+                                                    <input type="text" placeholder="No of people enrolled already *" value="<%= courses[i].enrolled %>" name="enrolled">
+                                                </div>
+                                              
+                                                 <div class="col-md-12 col-12 mb-15">
+                                                    <input type="text" placeholder="No of Lectures" value="<%= courses[i].lectureNo %>" name="lectureNo">
+                                                </div>
+                                               
+                                                <div class="col-md-12 col-12 mb-15">
+                                                    <input type="text" placeholder="What is the course Language?" value="<%= courses[i].language %>" name="language">
+                                                </div>
+                    
+                                                <div class="col-md-12 col-12 mb-15 ">
+                                                    <input class="form-control" type="date" value="" style="background-color:whitesmoke;border:none;padding:25px;color:grey " value="<%= courses[i].date %>" name="date" id="example-date-input">
+                                                </div>
+                                               
+                                                <div class="col-md-12 col-12 mb-15">
+                                                    <textarea placeholder="Description of course *"  name="description"></textarea>
+                                                </div>
+                                               
+                    
+                                              <div class="col-md-12 col-12 mb-15">
+                                                 <center> <button type="submit" class="btn btn-success" style="background-color: #DC4637;color:white;border:none" >Upload this course</button></center>
+                                              </div>
+                    
+                                                
+                                                   
+                                                    </form>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+
+                             
+                        <div class="modal fade" id="popup<%= i+ courses.length  %>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitles" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content" style="padding:5%">
+                                <h4 style="font-weight:bold; text-align:center">Do you want to Delete this post ?</h4><br>
+                               <center> 
+                                    <form action="/courseDelete/<%= courses[i].id %>" method="post">
+                                          <input type="hidden">
+                                          <button class="btn btn-danger"  style="padding:10px 30px;" type="submit">Yes</button>  
+                                    </form>
+                              </center>
+                              </div>
+                            </div>
+                          </div>
+                    
+                        <% } %>
+
+                         
+                       </div>
+                                </div>
+                   </div>
+               </div>
+               <div class="col-sm-0"></div>
+           </div>
+       </div>
+
+    
+
+      
+
+
+        <!-- Scroll Top Start -->
+        <a href="#" class="scroll-top" id="scroll-top">
+            <i class="arrow-top fal fa-long-arrow-up"></i>
+            <i class="arrow-bottom fal fa-long-arrow-up"></i>
+        </a>
+        <!-- Scroll Top End -->
+    </div>
+
+   
+
+    <!-- JS
+============================================ -->
+
+    <!-- Vendors JS -->
+    <!-- <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+<script src="assets/js/vendor/jquery-3.4.1.min.js"></script>
+<script src="assets/js/vendor/jquery-migrate-3.1.0.min.js"></script>
+<script src="assets/js/vendor/bootstrap.bundle.min.js"></script> -->
+
+    <!-- Plugins JS -->
+    <!-- <script src="assets/js/plugins/parallax.min.js"></script>
+<script src="assets/js/plugins/jquery.ajaxchimp.min.js"></script> -->
+
+    <!-- Use the minified version files listed below for better performance and remove the files listed above -->
+    <script src="/assets/js/vendor/vendor.min.js"></script>
+    <script src="/assets/js/plugins/plugins.min.js"></script>
+
+    <!-- Main Activation JS -->
+    <script src="/assets/js/main.js"></script>
+
+
+
+
+
+</body>
+
+</html>
