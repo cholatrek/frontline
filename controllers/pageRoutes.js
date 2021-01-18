@@ -2,6 +2,7 @@ const express =  require('express');
 const router = express.Router();
 const Course = require('../model/course');
 
+
 router.get('/', (req,res)=>{
     res.render('index', {
         title:'Homepage'
@@ -81,5 +82,7 @@ router.get('/home', (req,res)=>{
         })
  
 }) 
+
+
 
 module.exports = router;

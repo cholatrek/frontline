@@ -3,6 +3,7 @@ const router = express.Router();
 const courses = require('../model/course');
 const become = require('../model/become');
 const tutorList = require('../model/hometutorial')
+const Subscriber = require('../model/subscribers');
 
 router.get('/courses', (req,res)=>{
     res.render('postCourses', {
@@ -46,5 +47,17 @@ router.get('/tutorrequest', (req,res)=>{
             })
         })
 })
+router.get('/subscriberlist', (req,res)=>{
+    Subscriber
+        .find({})
+        .sort({_id:-1})
+        .exec((err,subscriber)=>{
+            res.render('subscriber', {
+                title: 'Subsciber',
+                subscriber:subscriber
+            })
+        })
+})
+
 
 module.exports = router; 
