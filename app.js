@@ -5,7 +5,8 @@ const mongoose = require('mongoose');
 const flash = require('connect-flash');
 const session = require('express-session');
 const ejs = require('ejs')
-const bodyParser = require('body-parser')
+const bodyParser = require('body-parser');
+const path = require('path')
 
 mongoose.connect( secret.db, {
     
@@ -29,7 +30,8 @@ app.use(session({
 app.use(flash()); 
 
 
-app.use(express.static('public'))
+app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, 'public')));
 
 
 
