@@ -28,7 +28,7 @@ router.post("/initialize-transaction/:courseId", async (req, res) => {
           amount: course.price * 100, 
           email: 'frontlinelearningcentre@gmail.com', 
           title:course.title,
-          callback_url: 'http://localhost:4000/confirmation', 
+          callback_url: 'https://frontlinelc.com/confirmation', 
           channels:['card', 'bank', 'ussd', 'qr', 'mobile_money', 'bank_transfer'],
           metadata: {
             custom_fields: [
