@@ -110,7 +110,7 @@ router.post('/courseEdit/:id', (req,res)=>{
 
             }else{
 
-                res.redirect('/admin/coursedetails')
+                res.redirect('/admin')
             }
         });
 
