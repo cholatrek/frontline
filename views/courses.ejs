@@ -67,7 +67,7 @@
                                     <span class="price"><strike>N</strike><%= courses[i].price %></span>
                                     <span class="date"><%= courses[i].date.toString().slice(0,15) %></span>
                                     <h3 class="title"><a href="/coursedetails/<%= courses[i]._id %>"><%= courses[i].title %></a></h3>
-                                   <p><%= courses[i].description.slice(0,122) %>...</p>
+                                   <p><%- courses[i].description.slice(0,122) %>...</p>
                                     <ul class="meta">
                                         <li><i class="far fa-file-alt"></i><%= courses[i].lectureNo %></li>
                                         <li><i class="far fa-user-alt"></i><%= courses[i].enrolled %>  </li>
